@@ -94,12 +94,6 @@ export const moveGrid = (grid, direction, mergeExpression) => {
       newLine.push(0);
     }
     
-    // Check if row changed
-    if (newLine.length !== row.length || !newLine.every((v, k) => v === row[k])) {
-      // Wait, comparing with original row (which includes zeros)
-      // 'line' was filtered.
-      // Comparison must be against original row in tempGrid
-    }
     return newLine;
   });
 
